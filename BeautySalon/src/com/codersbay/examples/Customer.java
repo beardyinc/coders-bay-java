@@ -18,9 +18,14 @@ public class Customer {
     public double getDiscount() {
         double totalDiscount = individualDiscount;
 
-        totalDiscount += membership.getDiscount() + 0.1;
+        if (membership != null)
+            totalDiscount += membership.getDiscount();
 
         return totalDiscount;
+    }
+
+    public Visit visit(Visitable visitable) {
+        return new Visit(visitable, this);
     }
 
     @Override
