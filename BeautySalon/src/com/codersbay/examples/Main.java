@@ -24,6 +24,10 @@ public class Main {
         c2.setIndividualDiscount(.03);
         System.out.println(visit2.getDescription());
 
-        //...
+        Visit visit3 = c3.visit(new CoffeeShop("Starbucks"));
+        visit3.addProduct(new LatteMacchiato());
+        visit3.addProduct(new ChocolateFudgeDonut());
+        visit3.addService(new Service("Wifi", 2.99));
+        System.out.println(visit3.getDescription());
     }
 }

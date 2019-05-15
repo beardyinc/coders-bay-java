@@ -1,6 +1,6 @@
 # Coding Exercise "Customer Service Management System"
 
-Implement a customer service software that can model different venues (e.g. beauty salons, hair dressers, coffee shops, etc), different rebate models (e.g. _none_, silver, gold, premium).
+Implement a coupon system in which different venues (e.g. beauty salons, hair dressers, coffee shops, etc) take part with different rebate models (e.g. _none_, silver, gold, premium).
 Additionally, each venue may grant a general discount (e.g. "start-of-the-week-discount",...) and each customer may also have a personal discount.
 
 You should implement a system, that can compute the total gross cost, the total discount and the resulting actual price of a visit. Your data model should at least take the following aspects 
@@ -19,14 +19,14 @@ into account.
     - `totalProductExpense`: the summed cost of all products
     
 - Visitable:
-    - is an interface that must be implemented by all venues
+    - is an abstract class that must be extended by all venues
     - has `getName()` and `getDiscount()` methods
     
 - Membership
     - is an abstract base class, offering a `getDiscount()` method
     - concrete Membership types (e.g. _gold_) should be modeled as subclasses
 
-- write a test program that generates at least 5 different customers, 3 different venues and "performs" 10 visits
+- write a test program that generates at least 5 different customers, 3 different venues and "performs" a couple of visits
 - your test program should produce meaningful console output
 
 
