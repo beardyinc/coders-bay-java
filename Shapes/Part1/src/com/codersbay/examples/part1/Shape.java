@@ -1,6 +1,4 @@
-package com.codersbay.examples;
-
-import java.awt.*;
+package com.codersbay.examples.part1;
 
 public abstract class Shape {
     private String colorHex;

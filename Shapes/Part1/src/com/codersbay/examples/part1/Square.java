@@ -1,4 +1,4 @@
-package com.codersbay.examples;
+package com.codersbay.examples.part1;
 
 public class Square extends Rectangle {
     private double sideLength;
@@ -21,6 +21,16 @@ public class Square extends Rectangle {
 
     public void setSideLength(double sideLength) {
         this.sideLength = sideLength;
+    }
+
+    @Override
+    double getArea() {
+        return sideLength * sideLength;
+    }
+
+    @Override
+    double getPerimeter() {
+        return 4 * sideLength;
     }
 
     @Override

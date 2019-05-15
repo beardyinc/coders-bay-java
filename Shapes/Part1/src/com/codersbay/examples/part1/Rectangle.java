@@ -1,4 +1,4 @@
-package com.codersbay.examples;
+package com.codersbay.examples.part1;
 
 public class Rectangle extends Shape {
     private double width;

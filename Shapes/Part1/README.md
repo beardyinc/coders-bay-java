@@ -7,7 +7,7 @@
 * `Rectangle` extends `Shape` and adds properties for `width` and `length`
 * `Square` extends `Rectangle` and adds another property `side`. 
 
-## Please implement this class hierarchy considering the following points
+## Implement this class hierarchy considering the following points
 * Shape is `abstract` and can therefore not be instantiated. `getArea()` and `getPerimeter()` are abstract and must be implemented by subclasses
 * all classes must override the `toString()` method
 * all classes must provide an explicit default constructor. Additionally, each class must provide a constructor with all parameters that "it needs"
